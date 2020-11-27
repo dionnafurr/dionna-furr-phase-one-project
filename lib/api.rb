@@ -9,9 +9,7 @@ class API
         response = Net::HTTP.get(uri)
         array_of_breweries = JSON.parse(response)
         array_of_breweries.each do |breweries|
-            name = breweries["name"]
-            # name, city, state, website url
-            binding.pry
+            Breweries.new(breweries["name"], breweries["city"], breweries["state"], breweries["website_url"])
         end
     end
 end
