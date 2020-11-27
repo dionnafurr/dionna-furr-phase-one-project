@@ -2,4 +2,5 @@
 
 require_relative "../enviornment"
 
-API.start
+cli =Cli.new 
+cli.start 

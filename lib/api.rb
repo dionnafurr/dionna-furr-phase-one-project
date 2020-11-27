@@ -1,7 +1,7 @@
 # set up like a class
 # responsible for talking with our API
 
-class API
+class Api
 
     def self.start
         url = "https://api.openbrewerydb.org/breweries"
