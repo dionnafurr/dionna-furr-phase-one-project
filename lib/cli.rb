@@ -8,7 +8,6 @@ class Cli
         Api.start
         self.breweries
     end
-
     def breweries
         puts "Would you like to see a list of breweries?"
         puts "Type 'yes' to continue or any other key to exit."
@@ -25,7 +24,6 @@ class Cli
             puts "Goodbye!"
         end
     end
-
     def display_list_of_breweries
         # access all the breweries
         # print them out
@@ -33,7 +31,6 @@ class Cli
             puts "#{index}. #{breweries.name}"
         end
     end
-
     def ask_user_for_brewery_choice
         # ask for their brewery choice
         input = gets.strip.to_i
@@ -49,21 +46,19 @@ class Cli
         puts breweries_instance.name
         puts "Would like to see more information about this brewery?"
         puts "Type 'yes' to continue or any other key to exit."
-        user_input = gets.strip
-        if user_input == "yes" || user_input == "y"
-        puts "Here is the information about the brewery."
-        display_brewery_details(breweries_instance)
-        else 
+            user_input = gets.strip
+            if user_input == "yes" || user_input == "y"
+            puts "Here is the information about the brewery."
+            display_brewery_details(breweries_instance)
+            else 
               # end the program
               puts "Goodbye!"
-        end
+            end
     end
-
     def display_brewery_details(breweries)
         puts "name: #{breweries.name}"
         puts "city: #{breweries.city}"
         puts "state: #{breweries.state}"
         puts "website_url: #{breweries.website_url}"
     end
-
 end
