@@ -1,5 +1,5 @@
 class Cli
-    # interect with the user
+    # interacts with the user
     # any puts or get statements
     # controls the flow of program
 
