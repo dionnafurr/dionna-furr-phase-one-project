@@ -50,8 +50,6 @@ class Cli
             if user_input == "yes" || user_input == "y"
             puts "Here is the information about the brewery."
             display_brewery_details(breweries_instance)
-            sleep(1)
-            breweries
             else 
               # end the program
               puts "Goodbye!"
