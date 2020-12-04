@@ -1,6 +1,3 @@
-# set up like a class
-# responsible for talking with our API
-
 class Api
 
     def self.start
