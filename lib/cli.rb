@@ -1,12 +1,9 @@
 class Cli
-    # interacts with the user
-    # any puts or get statements
-    # controls the flow of program
 
-    def start
+    def start #instance method 
         puts "Welcome"
         Api.start
-        self.breweries
+        breweries
     end
     def breweries
         puts "Would you like to see a list of breweries?"
@@ -53,6 +50,7 @@ class Cli
             else 
               # end the program
               puts "Goodbye!"
+
             end
     end
     def display_brewery_details(breweries)

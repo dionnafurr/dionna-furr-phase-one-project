@@ -2,5 +2,7 @@
 
 require_relative "../enviornment"
 
-cli =Cli.new 
+cli = Cli.new 
 cli.start 
+
+# Cli.new.start
